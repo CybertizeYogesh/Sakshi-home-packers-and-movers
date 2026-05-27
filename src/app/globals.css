@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.om-page {
+  min-height: 100vh;
+}
+
+.breadcrumb-list {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  padding: 0;
+  margin: 15px 0 0;
+  list-style: none;
+}
+
+.breadcrumb-list a,
+.breadcrumb-list span {
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+}
+
+.internal-content p {
+  margin-bottom: 22px;
+}
+
+.clone-form input,
+.clone-form textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #e5e5e5;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  outline: 0;
+}
+
+.clone-form textarea {
+  height: 145px;
+  padding-top: 18px;
+}
+
+@media (max-width: 575px) {
+  .contact-p-info-area .info h4,
+  .contact-p-info-area .info h4 a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}

@@ -1,0 +1,54 @@
+.wow,
+.img-custom-anim-left,
+.fadeInLeft,
+.fadeInRight,
+.fadeInUp {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.img-custom-anim-left,
+.fadeInLeft {
+  animation-name: cloneFadeLeft;
+}
+
+.fadeInRight {
+  animation-name: cloneFadeRight;
+}
+
+.fadeInUp {
+  animation-name: cloneFadeUp;
+}
+
+@keyframes cloneFadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-45px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes cloneFadeRight {
+  from {
+    opacity: 0;
+    transform: translate3d(45px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes cloneFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 45px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}

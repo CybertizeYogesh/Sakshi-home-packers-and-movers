@@ -1,0 +1,29 @@
+.faq-image img {
+  width: 100%;
+}
+
+.clone-faq-item {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.clone-faq-item button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: var(--theme-dark);
+  text-align: left;
+}
+
+.clone-faq-item p {
+  display: none;
+  margin: 0 0 18px;
+}
+
+.clone-faq-item p.show {
+  display: block;
+}

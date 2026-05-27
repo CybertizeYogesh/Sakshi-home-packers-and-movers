@@ -1,0 +1,28 @@
+:root {
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --theme-color-1: #102039;
+  --theme: #ea1826;
+  --theme-red: #ea1826;
+  --theme-dark: #102039;
+  --theme-navy: #0f1d34;
+  --theme-black: #151515;
+  --theme-white: #ffffff;
+  --theme-gray: #6f7784;
+  --theme-soft: #f6f6f6;
+  --shadow-sticky: 0 10px 20px 0 rgba(8, 0, 42, 0.08);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --transition-fast: 0.3s ease;
+  --transition-base: 0.4s ease;
+  --z-header: 111;
+  --z-offcanvas: 999;
+  --z-floating: 9999;
+  --bp-sm: 576px;
+  --bp-md: 768px;
+  --bp-lg: 992px;
+  --bp-xl: 1200px;
+  --bp-xxl: 1400px;
+}

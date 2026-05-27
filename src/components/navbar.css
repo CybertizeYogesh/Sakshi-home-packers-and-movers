@@ -1,0 +1,28 @@
+.bar-icon {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.offcanvas__overlay {
+  border: 0;
+}
+
+.offcanvas__info.info-open {
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.offcanvas__overlay.overlay-open {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.mean-expand {
+  border: 0;
+  color: #fff;
+  background: transparent;
+}

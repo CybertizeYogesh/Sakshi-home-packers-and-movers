@@ -1,0 +1,5 @@
+.service-tab-box-area .image img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}

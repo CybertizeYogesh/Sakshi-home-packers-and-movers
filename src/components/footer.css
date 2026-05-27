@@ -1,0 +1,36 @@
+.footer-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 88px);
+  gap: 12px;
+}
+
+.footer-gallery img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 767px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

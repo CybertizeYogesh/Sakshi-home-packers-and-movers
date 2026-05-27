@@ -1,0 +1,21 @@
+.clone-hero-slider {
+  overflow: hidden;
+}
+
+.clone-hero-slider .swiper-wrapper {
+  display: flex;
+  width: 300%;
+  animation: cloneHeroSlide 18s infinite;
+}
+
+.clone-hero-slider .swiper-slide {
+  width: 33.333333%;
+  flex: 0 0 33.333333%;
+}
+
+@keyframes cloneHeroSlide {
+  0%, 28% { transform: translateX(0); }
+  33%, 61% { transform: translateX(-33.333333%); }
+  66%, 94% { transform: translateX(-66.666666%); }
+  100% { transform: translateX(0); }
+}

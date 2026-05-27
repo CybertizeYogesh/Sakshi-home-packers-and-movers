@@ -1,0 +1,38 @@
+.floating-buttons {
+  position: fixed;
+  right: 14px;
+  top: 41%;
+  z-index: var(--z-floating);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 10px;
+  border-radius: 35px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.float-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.float-btn:hover {
+  transform: translateY(-4px);
+  color: #fff;
+}
+
+.call-btn {
+  background: red;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+}
