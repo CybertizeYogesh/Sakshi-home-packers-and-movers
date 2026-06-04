@@ -15,7 +15,7 @@ export default function ServiceDetail({ slug }) {
                 <img className="w-100 mb-35" src={service.detailImages[0] || service.image} alt="" />
                 <h2>{service.title}</h2>
                 <p>{service.excerpt}</p>
-                <p>Om Relocation Movers and Packers provides careful packing, organized loading, safe transport and reliable delivery support for every relocation requirement. The team follows a planned process so shifting stays smooth and goods remain protected.</p>
+                <p>Sakshi Home Packers and Movers provides careful packing, organized loading, safe transport and reliable delivery support for every relocation requirement. The team follows a planned process so shifting stays smooth and goods remain protected.</p>
                 <div className="row g-4 mt-20 mb-35">
                   {(service.detailImages || []).slice(1, 4).map((image) => (
                     <div className="col-md-4" key={image}><img className="w-100" src={image} alt="" /></div>

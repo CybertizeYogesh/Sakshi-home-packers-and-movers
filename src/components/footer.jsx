@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
               <div className="footer-widget-1">
                 <div className="footer-logo mb-30">
-                  <a href="/"><img src="/original-next/static/media/logo-white.c75ab9c1.svg" alt="Om Relocation logo" width="200" height="67" /></a>
+                  <a href="/"><img src="/original-next/static/media/logo-white.c75ab9c1.svg" alt="Sakshi Home Packers and Movers logo" width="200" height="67" /></a>
                 </div>
                 <p>Professional shifting service available for home office and transport trusted movers ensure safety</p>
                 <h6 className="mt-35">Working Hours:</h6>
@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© Prowide by <a href="https://www.cybertizegrowth.com/">Cybertize Growth</a></p>
+          <p>© Sakshi Home Packers and Movers. All Rights Reserved.</p>
           <div className="footer-bottom-links">
             <a href="#">Terms &amp; Condition</a>
             <a href="#">Privacy Policy</a>

@@ -52,6 +52,34 @@ a {
   padding-top: 18px;
 }
 
+.header-top-contact-info .email,
+.header-top-contact-info .email a,
+.header-link-1 .content,
+.header-link-1 .content a,
+.service-widget-2 .phone,
+.contact-p-info-area .contact-box,
+.contact-p-info-area .info,
+.contact-p-info-area .info h4,
+.contact-p-info-area .info h4 a,
+.footer-widget-1,
+.footer-widget-2,
+.footer-widget-3,
+.footer-widget-4,
+a[href^="mailto:"] {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.bd-faq .accordion-collapse {
+  overflow: hidden;
+}
+
+.bd-faq .accordion-body p {
+  margin-bottom: 0;
+}
+
 @media (max-width: 575px) {
   .contact-p-info-area .info h4,
   .contact-p-info-area .info h4 a {

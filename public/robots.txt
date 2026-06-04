@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omrelocationmoversandpackers.in/sitemap.xml
+Sitemap: https://sakshihomepackersandmovers.in/sitemap.xml

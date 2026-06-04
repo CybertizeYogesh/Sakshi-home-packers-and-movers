@@ -45,7 +45,7 @@ export default function Navbar() {
           <div className="header-top">
             <div className="header-top-contact-info">
               <span className="email p-relative">
-                <a href="mailto:info@omrelocationmoversandpackers.in">info@omrelocationmoversandpackers.in</a>
+                <a href="mailto:sakshihomepackers@gmail.com">sakshihomepackers@gmail.com</a>
               </span>
               <span className="time p-relative">24*7 : 09.00 AM - 09.00 PM</span>
             </div>
@@ -64,7 +64,7 @@ export default function Navbar() {
               <div className="header-main">
                 <div className="header-left">
                   <div className="header-logo">
-                    <a href="/"><img alt="Om Relocation logo" width="200" height="67" src="/original-next/static/media/logo-white.c75ab9c1.svg" /></a>
+                    <a href="/"><img alt="Sakshi Home Packers and Movers logo" width="200" height="67" src="/original-next/static/media/logo-white.c75ab9c1.svg" /></a>
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end">
@@ -98,7 +98,7 @@ export default function Navbar() {
                       <div className="icon"><i className="fal fa-phone-volume"></i></div>
                       <div className="content">
                         <span>Call Us Now</span>
-                        <h6><a href="tel:+919752828166">+91 975-282-8166</a></h6>
+                        <h6><a href="tel:8095500072">8095500072</a></h6>
                       </div>
                     </div>
                   </div>
@@ -122,7 +122,7 @@ export default function Navbar() {
             <div className="offcanvas__content">
               <div className="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
-                  <a href="/"><img alt="Header Logo" width="200" height="67" src="/original-next/static/media/logo-white.c75ab9c1.svg" /></a>
+                  <a href="/"><img alt="Sakshi Home Packers and Movers logo" width="200" height="67" src="/original-next/static/media/logo-white.c75ab9c1.svg" /></a>
                 </div>
                 <div className="offcanvas__close">
                   <button onClick={() => setOpen(false)}><i className="fal fa-times"></i></button>

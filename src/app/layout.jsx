@@ -2,10 +2,11 @@ import "./variables.css";
 import "./original.css";
 import "./globals.css";
 import SiteBehavior from "@/components/siteBehavior";
-import { metadataFor } from "@/data/seoData";
+import { faqs } from "@/data/faqData";
+import { BUSINESS_NAME, EMAIL, PHONE, SITE_URL, metadataFor } from "@/data/seoData";
 
 export const metadata = {
-  metadataBase: new URL("https://omrelocationmoversandpackers.in"),
+  metadataBase: new URL(SITE_URL),
   ...metadataFor("/"),
   icons: {
     icon: [
@@ -23,32 +24,36 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://omrelocationmoversandpackers.in/#localbusiness",
-    name: "Om Relocation Packers and Movers",
-    url: "https://omrelocationmoversandpackers.in/",
-    image: "https://omrelocationmoversandpackers.in/favicon.svg",
-    telephone: "+91-7228-8025-65",
-    email: "info@omrelocationmoversandpackers.in",
+    "@id": `${SITE_URL}/#localbusiness`,
+    name: BUSINESS_NAME,
+    url: `${SITE_URL}/`,
+    image: `${SITE_URL}/favicon.svg`,
+    telephone: PHONE,
+    email: EMAIL,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Ahmedabad",
-      addressRegion: "Gujarat",
+      streetAddress: "1st Floor, 587/C, ACES Layout, A Block, West Zone, Kudlu",
+      addressLocality: "Bangalore",
+      addressRegion: "Karnataka",
+      addressCounty: "Bengaluru Urban",
+      postalCode: "560068",
       addressCountry: "IN"
     },
-    areaServed: ["Ahmedabad", "Gujarat", "India"],
-    sameAs: ["https://omrelocationmoversandpackers.in/"]
+    areaServed: ["Bangalore", "Bengaluru Urban", "Karnataka", "India"],
+    sameAs: [`${SITE_URL}/`]
   },
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://omrelocationmoversandpackers.in/#organization",
-    name: "Om Relocation Packers and Movers",
-    url: "https://omrelocationmoversandpackers.in/",
-    logo: "https://omrelocationmoversandpackers.in/favicon.svg",
+    "@id": `${SITE_URL}/#organization`,
+    name: BUSINESS_NAME,
+    url: `${SITE_URL}/`,
+    logo: `${SITE_URL}/favicon.svg`,
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+91-7228-8025-65",
+      telephone: PHONE,
+      email: EMAIL,
       contactType: "customer service",
       areaServed: "IN"
     }
@@ -56,45 +61,35 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://omrelocationmoversandpackers.in/#website",
-    name: "Om Relocation Packers and Movers",
-    url: "https://omrelocationmoversandpackers.in/"
+    "@id": `${SITE_URL}/#website`,
+    name: BUSINESS_NAME,
+    url: `${SITE_URL}/`
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://omrelocationmoversandpackers.in/services#service",
-    name: "Packers and Movers Services in Ahmedabad",
+    "@id": `${SITE_URL}/services#service`,
+    name: "Packers and Movers Services in Bangalore",
     provider: {
-      "@id": "https://omrelocationmoversandpackers.in/#localbusiness"
+      "@id": `${SITE_URL}/#localbusiness`
     },
     areaServed: {
       "@type": "City",
-      name: "Ahmedabad"
+      name: "Bangalore"
     },
     serviceType: "Home shifting, office shifting, packing, loading, warehousing and moving insurance"
   },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Do Om Relocation Packers and Movers provide home shifting services in Ahmedabad?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, Om Relocation Packers and Movers provide home shifting, office relocation, packing, loading, warehousing and related moving services in Ahmedabad."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "How can I contact Om Relocation Packers and Movers?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "You can contact Om Relocation Packers and Movers through the phone and email details listed on the website contact page."
-        }
+    mainEntity: faqs.map(([question, answer]) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer
       }
-    ]
+    }))
   },
   {
     "@context": "https://schema.org",
@@ -104,13 +99,13 @@ const structuredData = [
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://omrelocationmoversandpackers.in/"
+        item: `${SITE_URL}/`
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://omrelocationmoversandpackers.in/services"
+        item: `${SITE_URL}/services`
       }
     ]
   }

@@ -241,6 +241,43 @@ export default function SiteBehavior() {
       return () => listeners.forEach((dispose) => dispose());
     };
 
+    const setupFaqAccordion = () => {
+      const groups = [...document.querySelectorAll(".bd-faq .bd-faq-group")];
+      if (!groups.length) return undefined;
+
+      const disposers = [];
+      groups.forEach((group) => {
+        const items = [...group.querySelectorAll(".accordion-item")];
+        const setItem = (item, open) => {
+          const button = item.querySelector(".accordion-button");
+          const collapse = item.querySelector(".accordion-collapse");
+          if (!button || !collapse) return;
+          button.classList.toggle("collapsed", !open);
+          button.setAttribute("aria-expanded", open ? "true" : "false");
+          collapse.classList.toggle("show", open);
+          collapse.style.display = open ? "block" : "none";
+          collapse.style.overflow = "hidden";
+          collapse.style.transition = "max-height 500ms ease";
+          collapse.style.maxHeight = open ? `${collapse.scrollHeight}px` : "0px";
+        };
+
+        items.forEach((item, index) => {
+          setItem(item, item.querySelector(".accordion-collapse")?.classList.contains("show") || index === 0);
+          const button = item.querySelector(".accordion-button");
+          const onClick = (event) => {
+            event.preventDefault();
+            const isOpen = button?.getAttribute("aria-expanded") === "true";
+            items.forEach((candidate) => setItem(candidate, false));
+            if (!isOpen) setItem(item, true);
+          };
+          button?.addEventListener("click", onClick);
+          disposers.push(() => button?.removeEventListener("click", onClick));
+        });
+      });
+
+      return () => disposers.forEach((dispose) => dispose());
+    };
+
     const setupCounters = () => {
       const counterTargets = [
         { value: 3000, display: "3,000", suffix: "+" },
@@ -364,6 +401,7 @@ export default function SiteBehavior() {
     expanders.forEach((button) => button.addEventListener("click", toggleSubmenu));
     const cleanupSwipers = setupSwipers();
     const cleanupTabs = setupServiceTabs();
+    const cleanupFaqAccordion = setupFaqAccordion();
     const cleanupCounters = setupCounters();
     applyAccessibilityAttributes();
 
@@ -375,6 +413,7 @@ export default function SiteBehavior() {
       expanders.forEach((button) => button.removeEventListener("click", toggleSubmenu));
       cleanupSwipers?.();
       cleanupTabs?.();
+      cleanupFaqAccordion?.();
       cleanupCounters?.();
       document.body.style.overflow = "";
     };
