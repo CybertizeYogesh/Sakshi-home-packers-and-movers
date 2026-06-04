@@ -115,9 +115,9 @@ a[href^="mailto:"] {
   }
 }
 
-/* Fix main banner title text color to be white and readable on dark slider backgrounds */
+/* Fix main banner title text color to be orange and readable on dark slider backgrounds */
 .banner-title {
-  color: #FFFFFF !important;
+  color: #F7710E !important;
 }
 
 
