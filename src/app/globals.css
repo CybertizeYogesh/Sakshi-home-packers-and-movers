@@ -87,3 +87,32 @@ a[href^="mailto:"] {
     word-break: break-word;
   }
 }
+
+/* Custom Theme Color Variables Overrides (Deep Blue & Orange) */
+:root {
+  --theme-color-1: #012861 !important;
+  --theme-color: #F7710E !important;
+  --theme: #F7710E !important;
+  --theme-red: #F7710E !important;
+  --theme-dark: #012861 !important;
+  --theme-navy: #001b44 !important;
+}
+
+/* Keep network links on one line for tablet and desktop viewports */
+.our-network a {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .our-network a {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .our-network a {
+    font-size: 13.5px;
+  }
+}
+
+

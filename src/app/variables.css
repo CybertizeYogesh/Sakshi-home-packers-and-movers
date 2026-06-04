@@ -1,11 +1,11 @@
 :root {
   --primary-font: "Inter", sans-serif;
   --secondary-font: "Roboto", sans-serif;
-  --theme-color-1: #102039;
-  --theme: #ea1826;
-  --theme-red: #ea1826;
-  --theme-dark: #102039;
-  --theme-navy: #0f1d34;
+  --theme-color-1: #012861;
+  --theme: #F7710E;
+  --theme-red: #F7710E;
+  --theme-dark: #012861;
+  --theme-navy: #001b44;
   --theme-black: #151515;
   --theme-white: #ffffff;
   --theme-gray: #6f7784;

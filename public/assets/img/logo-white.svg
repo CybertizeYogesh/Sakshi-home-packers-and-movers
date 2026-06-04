@@ -1,0 +1,18 @@
+<svg width="200" height="67" viewBox="0 0 200 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dynamic Speed Swoosh (Orange Accent) -->
+  <path d="M10,48 C20,53 38,53 50,46 C42,48 30,47 22,43 C14,39 8,30 18,22 C22,19 28,18 34,19 C28,17 20,17 14,21 C4,28 2,42 10,48 Z" fill="#F7710E" />
+  
+  <!-- Isometric Box Group (White and Light Grey) -->
+  <g transform="translate(18, 14)">
+    <!-- Top Face -->
+    <path d="M18,3 L33,9.5 L18,16 L3,9.5 Z" fill="#cbd5e1" />
+    <!-- Left Face -->
+    <path d="M3,9.5 L18,16 L18,30 L3,23.5 Z" fill="#ffffff" />
+    <!-- Right Face -->
+    <path d="M18,16 L33,9.5 L33,23.5 L18,30 Z" fill="#e2e8f0" />
+  </g>
+  
+  <!-- Typography Group (White) -->
+  <text x="65" y="33" font-family="'Inter', sans-serif" font-weight="800" font-size="22" fill="#ffffff" letter-spacing="0.5">Sakshi</text>
+  <text x="65" y="48" font-family="'Inter', sans-serif" font-weight="600" font-size="7.5" fill="#ffffff" letter-spacing="0.5" opacity="0.9">Home Packers &amp; Movers</text>
+</svg>
