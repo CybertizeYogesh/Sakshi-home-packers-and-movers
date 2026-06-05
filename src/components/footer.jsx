@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
               <div className="footer-widget-1">
                 <div className="footer-logo mb-30">
-                  <a href="/"><img src="/assets/img/logo-white.svg" alt="Sakshi Home Packers and Movers logo" width="200" height="67" /></a>
+                  <a href="/"><img src="/assets/img/logo-white.svg" alt="Sakshi Home Packers and Movers logo" width="63" height="55" /></a>
                 </div>
                 <p>Professional shifting service available for home office and transport trusted movers ensure safety</p>
                 <h6 className="mt-35">Working Hours:</h6>

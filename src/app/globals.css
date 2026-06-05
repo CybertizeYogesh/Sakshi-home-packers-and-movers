@@ -90,12 +90,28 @@ a[href^="mailto:"] {
 
 /* Custom Theme Color Variables Overrides (Deep Blue & Orange) */
 :root {
-  --theme-color-1: #012861 !important;
-  --theme-color: #F7710E !important;
-  --theme: #F7710E !important;
-  --theme-red: #F7710E !important;
-  --theme-dark: #012861 !important;
+  --theme-color-1: #012C5F !important;
+  --theme-color: #FC7009 !important;
+  --theme: #FC7009 !important;
+  --theme-red: #FC7009 !important;
+  --theme-dark: #012C5F !important;
   --theme-navy: #001b44 !important;
+}
+
+/* Fix logo sizes to prevent stretching navbar, mobile menu, and footer */
+.header-logo img {
+  height: 55px !important;
+  width: auto !important;
+}
+
+.offcanvas__logo a img {
+  height: 55px !important;
+  width: auto !important;
+}
+
+.footer-logo img {
+  height: 55px !important;
+  width: auto !important;
 }
 
 /* Keep network links on one line for tablet and desktop viewports */
@@ -117,7 +133,7 @@ a[href^="mailto:"] {
 
 /* Fix main banner title text color to be orange and readable on dark slider backgrounds */
 .banner-title {
-  color: #F7710E !important;
+  color: #FC7009 !important;
 }
 
 
