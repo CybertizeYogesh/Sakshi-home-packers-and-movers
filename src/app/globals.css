@@ -99,18 +99,31 @@ a[href^="mailto:"] {
 }
 
 /* Fix logo sizes to prevent stretching navbar, mobile menu, and footer */
+.header-logo {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.header-logo a {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
 .header-logo img {
-  height: 55px !important;
+  height: 85px !important;
   width: auto !important;
 }
 
 .offcanvas__logo a img {
-  height: 55px !important;
+  height: 85px !important;
   width: auto !important;
 }
 
 .footer-logo img {
-  height: 55px !important;
+  height: 85px !important;
   width: auto !important;
 }
 
