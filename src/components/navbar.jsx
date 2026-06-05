@@ -68,7 +68,7 @@ export default function Navbar() {
               <div className="header-main">
                 <div className="header-left">
                   <div className="header-logo">
-                    <a href="/"><img alt="Sakshi Home Packers and Movers logo" width="96" height="85" src="/assets/img/logo-white.svg" /></a>
+                    <a href="/"><img alt="Sakshi Home Packers and Movers logo" width="96" height="85" src="/assets/img/logo-colored.svg" /></a>
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end">
@@ -126,7 +126,7 @@ export default function Navbar() {
             <div className="offcanvas__content">
               <div className="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
-                  <a href="/"><img alt="Sakshi Home Packers and Movers logo" width="96" height="85" src="/assets/img/logo-white.svg" /></a>
+                  <a href="/"><img alt="Sakshi Home Packers and Movers logo" width="96" height="85" src="/assets/img/logo-colored.svg" /></a>
                 </div>
                 <div className="offcanvas__close">
                   <button onClick={() => setOpen(false)}><i className="fal fa-times"></i></button>
