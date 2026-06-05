@@ -90,11 +90,11 @@ a[href^="mailto:"] {
 
 /* Custom Theme Color Variables Overrides (Deep Blue & Orange) */
 :root {
-  --theme-color-1: #012C5F !important;
-  --theme-color: #FC7009 !important;
-  --theme: #FC7009 !important;
-  --theme-red: #FC7009 !important;
-  --theme-dark: #012C5F !important;
+  --theme-color-1: #022D60 !important;
+  --theme-color: #FC710A !important;
+  --theme: #FC710A !important;
+  --theme-red: #FC710A !important;
+  --theme-dark: #022D60 !important;
   --theme-navy: #001b44 !important;
 }
 
@@ -133,7 +133,7 @@ a[href^="mailto:"] {
 
 /* Fix main banner title text color to be orange and readable on dark slider backgrounds */
 .banner-title {
-  color: #FC7009 !important;
+  color: #FC710A !important;
 }
 
 
