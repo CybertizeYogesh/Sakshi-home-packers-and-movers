@@ -48,6 +48,10 @@ export default function Navbar() {
                 <a href="mailto:sakshihomepackers@gmail.com">sakshihomepackers@gmail.com</a>
               </span>
               <span className="time p-relative">24*7 : 09.00 AM - 09.00 PM</span>
+              <span className="gstin p-relative" style={{ paddingLeft: "25px" }}>
+                <i className="fal fa-file-invoice" style={{ position: "absolute", left: 0, top: "4px" }}></i>
+                GSTIN: 29LSPPS0864Q1Z9
+              </span>
             </div>
             <div className="header-top-socials">
               <span><a href="#"><i className="fab fa-facebook-f"></i></a></span>
