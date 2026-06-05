@@ -115,16 +115,22 @@ a[href^="mailto:"] {
 .header-logo img {
   height: 85px !important;
   width: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
 }
 
 .offcanvas__logo a img {
   height: 85px !important;
   width: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
 }
 
 .footer-logo img {
   height: 85px !important;
   width: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
 }
 
 /* Keep network links on one line for tablet and desktop viewports */
