@@ -30,7 +30,7 @@
 }
 
 .call-btn {
-  background: red;
+  background: var(--theme-color, #FC710A);
 }
 
 .whatsapp-btn {

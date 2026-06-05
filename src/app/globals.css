@@ -155,4 +155,17 @@ a[href^="mailto:"] {
   color: #FC710A !important;
 }
 
+/* Fix call icon colors to match theme orange */
+.header-link-1 .icon {
+  background: var(--theme-color, #FC710A) !important;
+}
+.header-link-1 .icon:before {
+  border-color: var(--theme-color, #FC710A) !important;
+}
+.call-btn {
+  background: var(--theme-color, #FC710A) !important;
+}
+.float-btn.call-btn {
+  background-color: var(--theme-color, #FC710A) !important;
+}
 
